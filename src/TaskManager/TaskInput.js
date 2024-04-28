@@ -13,7 +13,7 @@ const TaskInput = ({onSubmit}) => {
   return (
     <div>
       <form onSubmit={HandleForm}>
-            <label>Enter your task</label>
+            <label>Enter your task to add in Tasks list</label>
             <input type='text' value={task} onChange={(e)=>settask(e.target.value)}  />
             <button type='submit'>Add task</button>
         </form>
