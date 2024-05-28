@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -13,19 +13,25 @@ import { Home } from './Router-dom/Home';
 import { Contact } from './Router-dom/Contact';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import About from './Router-dom/About'
+import { UseEffect } from './UseEffect/UseEffect';
 
 // let isGoal ;
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-    <BrowserRouter>
-    <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-    </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    // <Routes>
+    //     <Route path='/' element={<Home/>}/>
+    //     <Route path='/about' element={<About/>}/>
+    //     <Route path='/contact' element={<Contact/>}/>
+    // </Routes>
+    // </BrowserRouter>
+    <>
+<App/>
+   
+    </>
 );
 
